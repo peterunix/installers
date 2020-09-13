@@ -1,0 +1,6 @@
+#!/bin/sh
+# Install LF file manager binary
+
+cd /opt
+wget https://github.com/gokcehan/lf/releases/download/r16/lf-linux-amd64.tar.gz
+sudo tar -xzvf lf-linux-amd64.tar.gz -C /usr/local/bin/

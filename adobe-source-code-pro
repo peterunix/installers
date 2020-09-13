@@ -1,0 +1,7 @@
+#!/bin/sh
+# Installs adobe-source-code-pro font
+
+FONT_HOME=~/.local/share/fonts
+echo "Installing fonts at $PWD to $FONT_HOME"
+sudo mkdir -p "$FONT_HOME/adobe-fonts/source-code-pro"
+sudo git clone --branch release --depth 1 'https://github.com/adobe-fonts/source-code-pro.git' "$FONT_HOME/adobe-fonts/source-code-pro" && fc-cache -f -v "$FONT_HOME/adobe-fonts/source-code-pro"
