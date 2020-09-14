@@ -1,0 +1,7 @@
+#!/bin/sh
+# Downloads zoom client
+
+cd /opt
+sudo yum -y install wget
+wget https://zoom.us/client/latest/zoom_x86_64.rpm
+sudo yum localinstall zoom_x86_64.rpm -y

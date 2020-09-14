@@ -1,0 +1,4 @@
+#!/bin/sh
+# Install H264 codecs on chromium and firefox
+
+sudo dnf install chromium-freeworld -y

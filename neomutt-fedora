@@ -1,0 +1,6 @@
+#!/bin/sh
+# Install neomutt on fedora
+
+sudo dnf install dnf-plugins-core -y
+sudo dnf copr enable flatcap/neomutt
+sudo dnf install neomutt -y

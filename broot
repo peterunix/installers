@@ -1,0 +1,7 @@
+#!/bin/sh
+# Installs broot binary
+
+cd /opt
+wget https://dystroy.org/broot/download/x86_64-linux/broot
+chmod +x broot
+sudo ln -s /opt/broot /usr/local/bin/broot
