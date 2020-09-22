@@ -1,0 +1,8 @@
+#!/bin/sh
+# Scrots a weird one to install
+
+sudo dnf install imlib2 wget glibc -y
+cd /opt
+wget https://download-ib01.fedoraproject.org/pub/fedora/linux/releases/30/Everything/x86_64/os/Packages/g/giblib-1.2.4-28.fc28.x86_64.rpm
+rpm -Uvh giblib-1.2.4-28.fc28.x86_64.rpm
+sudo dnf install scrot -y
