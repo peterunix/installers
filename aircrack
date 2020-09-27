@@ -1,0 +1,10 @@
+#!/bin/sh
+# Install the aircrack suite from source
+
+cd /opt
+git clone https://github.com/aircrack-ng/aircrack-ng.git
+cd aircrack-ng
+./autogen.sh
+#./configure --with-experimental
+./configure
+sudo make  -j $(nproc) clean install

@@ -1,0 +1,7 @@
+#!/bin/sh
+# Compiles newsboat RSS/Atom feed reader
+
+cd /opt
+git clone https://github.com/newsboat/newsboat.git
+cd newsboat
+sudo make -j $(nproc) clean install

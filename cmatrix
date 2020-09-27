@@ -1,0 +1,9 @@
+#!/bin/sh
+# Cmatrix terminal bling
+
+cd /opt
+git clone https://github.com/abishekvashok/cmatrix.git
+cd cmatrix
+autoreconf -i
+./configure
+sudo make -j $(nproc) clean install

@@ -1,0 +1,3 @@
+#!/bin/sh
+# Installs dependencies for building all my software
+dnf install -y imlib2-devel libexif-devel giflib-devel automake libevent-devel bison libtool shtool libgit2-devel
