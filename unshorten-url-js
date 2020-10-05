@@ -1,6 +1,11 @@
 #!/bin/sh
 # Unshortens urls
 
+if [ -z "$(command -v npm)" ]; then
+	echo "Npm is a required dependency. Exiting"
+	exit
+fi
+
 cd /opt
 git clone https://github.com/amrwc/unshorten-url.git
 cd unshorten-url

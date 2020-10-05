@@ -1,0 +1,10 @@
+#!/bin/sh
+# Local arch wikipedia
+
+cd /opt
+mkdir arch-wiki-lite
+cd arch-wiki-lite
+wget https://mirrors.acm.wpi.edu/archlinux/community/os/x86_64/arch-wiki-lite-20200527-1-any.pkg.tar.zst
+tar -I zstd -xvf  arch-wiki-lite*.tar.zst
+sudo mv usr/share/doc/arch-wiki /usr/share/doc
+sudo mv usr/bin/wiki-search /usr/local/bin

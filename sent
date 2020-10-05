@@ -1,0 +1,16 @@
+#!/bin/sh
+# Suckless presentation thing
+
+# libpng libjpeg-turbo
+cd /opt
+git clone https://git.suckless.org/farbfeld
+cd farbfeld
+make
+sudo make install
+
+# Xlib Xft farbfeld
+cd /opt
+git clone git clone https://git.suckless.org/sent
+cd sent
+make
+sudo make install
