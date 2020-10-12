@@ -4,5 +4,3 @@
 cd /opt
 wget https://www.torproject.org/dist/torbrowser/10.0/tor-browser-linux64-10.0_en-US.tar.xz
 tar -xJvf tor-browser-linux64-10.0_en-US.tar.xz 
-cd tor-browser_en-US
-./start-tor-browser.desktop
