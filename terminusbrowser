@@ -1,0 +1,5 @@
+#!/bin/sh
+# Doesn't install the required packages
+
+cd /opt
+git clone https://github.com/wtheisen/TerminusBrowser.git
