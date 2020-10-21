@@ -4,5 +4,5 @@
 cd /opt
 git clone https://github.com/neovim/neovim.git
 cd neovim
-make CMAKE_INSTALL_PREFIX=/usr/local/bin/
+sudo make CMAKE_INSTALL_PREFIX=/usr/local/bin/
 sudo make -j $(nproc) clean install
