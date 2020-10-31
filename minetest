@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cd /opt/
+git clone --depth 1 https://github.com/minetest/minetest.git
+cd minetest
+cmake . -DRUN_IN_PLACE=false
+make -j$(nproc)
