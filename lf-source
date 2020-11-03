@@ -1,0 +1,2 @@
+#!/bin/sh
+env CGO_ENABLED=0 GO111MODULE=off go get -u -ldflags="-s -w" github.com/gokcehan/lf

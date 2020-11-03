@@ -1,0 +1,8 @@
+#!/bin/sh
+
+FONTHOME=~/.local/share/fonts/
+mkdir -p $FONTHOME/terminus
+cd $FONTHOME/terminus
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Terminus.zip
+unzip Terminus.zip
+fc-cache -fv
