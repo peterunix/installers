@@ -10,3 +10,4 @@ cd /opt
 git clone https://github.com/amrwc/unshorten-url.git
 cd unshorten-url
 npm install
+sudo ln -s /opt/unshorten-url/unshorten-url.js /usr/local/bin/
