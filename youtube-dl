@@ -1,8 +1,8 @@
 #!/bin/sh
 
 if [ ! -z $(command -v youtube-dl) ]; then
-	echo "Youtube-dl already in path. Please remove it before installing"
-	exit
+	sudo apt remove youtube-dl -y
+	sudo rm /usr/local/bin/youtube-dl
 fi
 
 sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
