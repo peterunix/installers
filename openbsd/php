@@ -1,0 +1,5 @@
+#!/bin/sh
+#httpd_flags
+#pkg_scripts=php_fpm
+
+pkg_add php php-fpm
