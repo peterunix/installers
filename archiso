@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd /opt
+git clone https://github.com/archlinux/archiso.git
+cd archiso
+sudo make install

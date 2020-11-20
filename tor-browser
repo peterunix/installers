@@ -6,7 +6,7 @@ case $(arch) in
 		wget $(lynx -dump -hiddenlinks=listonly https://www.torproject.org/download/languages/ | grep linux32-.*en-US.tar.xz$ | cut -d' '  -f4)
 		;;
 	x86_64)
-		wget $(lynx -dump -hiddenlinks=listonly https://www.torproject.org/download/languages/ | grep linux32-.*en-US.tar.xz$ | cut -d' '  -f4)
+		wget $(lynx -dump -hiddenlinks=listonly https://www.torproject.org/download/languages/ | grep linux64-.*en-US.tar.xz$ | cut -d' '  -f4)
 		;;
 esac
 tar -xJvf tor-browser*en-US.tar.xz
