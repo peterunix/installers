@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd /opt
+git clone https://github.com/n-ivkovic/tspreed
+cd tspreed
+sudo make install
