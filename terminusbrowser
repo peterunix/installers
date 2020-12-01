@@ -3,3 +3,5 @@
 
 cd /opt
 git clone https://github.com/wtheisen/TerminusBrowser.git
+cd /opt/TerminusBrowser
+pip3 install --user -r requirements.txt
