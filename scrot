@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd /opt
+git clone https://github.com/resurrecting-open-source-projects/scrot.git
+cd /opt/scrot
+./autogen.sh
+./configure
+sudo make clean install
