@@ -1,0 +1,7 @@
+#!/bin/sh
+# Kali linux undercover mode all distros
+
+cd /opt
+git clone https://github.com/SofianeHamlaoui/Go-undercover && cd Go-undercover
+chmod +x ./install.sh
+./install.sh
