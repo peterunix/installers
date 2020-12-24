@@ -1,0 +1,9 @@
+#!/bin/sh
+# Installs adobe-source-code-pro font
+
+FONTHOME=~/.local/share/fonts/
+mkdir -p $FONTHOME/source-code-pro
+cd $FONTHOME/source-code-pro
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip
+unzip SourceCodePro.zip
+fc-cache -fv
