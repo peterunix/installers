@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd /opt
+git clone https://github.com/ikn/xorg-choose-window.git
+cd xorg-choose-window
+sudo make install
