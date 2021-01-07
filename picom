@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd /opt
+git clone https://github.com/yshui/picom.git
+cd /opt/picom
+git submodule update --init --recursive
+meson --buildtype=release . build
+sudo ninja -C build install

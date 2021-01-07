@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd /opt
+git clone https://github.com/ibhagwan/picom.git /opt/picom-ibhagwan
+cd /opt/picom-ibhagwan
+git submodule update --init --recursive
+meson --buildtype=release . build
+sudo ninja -C build install
