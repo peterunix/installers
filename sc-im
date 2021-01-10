@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cd /opt
+git clone https://github.com/andmarti1424/sc-im.git
+cd /opt/sc-im/src
+make -j$(nproc)
+sudo make install
