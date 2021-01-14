@@ -4,10 +4,10 @@ cd /opt
 case $(arch) in
 	i386|i486|i586|i686)
 		wget $(lynx -dump -hiddenlinks=listonly https://www.torproject.org/download/languages/ | grep linux32-.*en-US.tar.xz$ | cut -d' '  -f4)
+		tar -xJvf tor-browser*en-US.tar.xz
 		;;
 	x86_64)
 		wget $(lynx -dump -hiddenlinks=listonly https://www.torproject.org/download/languages/ | grep linux64-.*en-US.tar.xz$ | cut -d' '  -f4)
+		tar -xJvf tor-browser*en-US.tar.xz
 		;;
 esac
-tar -xJvf tor-browser*en-US.tar.xz
-

@@ -1,0 +1,4 @@
+#!/bin/sh
+# Hardened userjs
+
+https://raw.githubusercontent.com/pyllyukko/user.js/master/user.js
