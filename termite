@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cd /opt
+git clone https://github.com/thestinger/vte-ng.git
+cd vte-ng
+./autogen.sh
+sudo make install
+
+git clone --recursive https://github.com/thestinger/termite.git
+cd termite
+sudo make install
