@@ -1,0 +1,15 @@
+#!/bin/sh
+# It's some kernel module to get virtual a webcam going
+
+# Installing linux kernel headers for current running kernel
+sudo apt install -y  linux-headers-$(uname -r)
+
+cd /opt
+git clone https://github.com/umlaeute/v4l2loopback.git
+cd v4l2loopback
+sudo make install
+sudo cp v4l2loopback.ko /lib/modules/$(uname -r)
+sudo depmod -a
+sudo modprobe v4l2loopback
+
+# v4l2-ctl --list-device
