@@ -1,6 +1,7 @@
 #!/bin/sh
 
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 git clone https://github.com/adi1090x/polybar-themes
 cd polybar-themes/polybar-1
 cp -r fonts/* ~/.local/share/fonts

@@ -2,7 +2,8 @@
 # Suckless presentation thing
 
 # libpng libjpeg-turbo
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 git clone https://git.suckless.org/farbfeld
 cd farbfeld
 make clean
@@ -10,7 +11,8 @@ make
 sudo make install
 
 # Xlib Xft farbfeld
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 git clone https://git.suckless.org/sent
 cd sent
 make

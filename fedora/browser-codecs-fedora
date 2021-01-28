@@ -3,6 +3,6 @@
 # Chromium freeworld should replace the chromium-browser package
 # For vivaldi
 # sudo dnf install chromium-libs-media-freeworld
-# sudo cp -av /usr/lib64/chromium-browser/libffmpeg.so /opt/vivaldi/lib/
+# sudo cp -av /usr/lib64/chromium-browser/libffmpeg.so $dirvivaldi/lib/
 
 sudo dnf install chromium-freeworld compat-ffmpeg28 ffmpeg-libs -y

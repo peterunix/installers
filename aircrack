@@ -1,7 +1,8 @@
 #!/bin/sh
 # Install the aircrack suite from source
 
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 git clone https://github.com/aircrack-ng/aircrack-ng.git
 cd aircrack-ng
 ./autogen.sh

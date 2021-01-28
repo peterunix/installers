@@ -1,4 +1,7 @@
-cd /opt
+#!/bin/sh
+
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 git clone https://github.com/tmux/tmux.git
 cd tmux
 make clean

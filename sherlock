@@ -1,9 +1,9 @@
 #!/bin/sh
 # Username lookup tool
 
-cd /opt
+cd $dir
 git clone https://github.com/sherlock-project/sherlock.git
 cd sherlock
 chmod +x sherlock/sherlock.py
 python3 -m pip install -r requirements.txt --user
-sudo ln -s /opt/sherlock/sherlock/sherlock.py /usr/local/bin
+sudo ln -s $dirsherlock/sherlock/sherlock.py /usr/local/bin

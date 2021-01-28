@@ -1,7 +1,8 @@
 #!/bin/sh
 #Graphical neovim client written in go
 
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 wget https://github.com/akiyosi/goneovim/releases/download/v0.4.8/Goneovim-0.4.8-linux.tar.bz2
 tar -xjvf Goneovim-0.4.8-linux.tar.bz2
 sudo ln -s Goneovim-0.4.8-linux/goneovim /usr/local/bin/goneovim

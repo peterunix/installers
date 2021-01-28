@@ -1,7 +1,8 @@
 #!/bin/sh
 # Doesn't install the required packages
 
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 git clone https://github.com/wtheisen/TerminusBrowser.git
-cd /opt/TerminusBrowser
+cd $dir/TerminusBrowser
 pip3 install --user -r requirements.txt

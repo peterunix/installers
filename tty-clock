@@ -2,7 +2,7 @@
 # Installs tty-clock. A cli clock
 # Dependencies: ncurses-devel (fedora)
 
-cd /opt
+cd $dir
 git clone https://github.com/xorg62/tty-clock.git
 cd tty-clock
 sudo make -j $(nproc) clean install

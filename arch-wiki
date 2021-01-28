@@ -1,7 +1,8 @@
 #!/bin/sh
 # Local arch wikipedia
 
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 mkdir arch-wiki-lite
 cd arch-wiki-lite
 wget https://mirrors.acm.wpi.edu/archlinux/community/os/x86_64/arch-wiki-lite-20200527-1-any.pkg.tar.zst

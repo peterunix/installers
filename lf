@@ -1,7 +1,8 @@
 #!/bin/sh
 # Install LF file manager binary
 
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 
 case "$(arch)" in
 	x86_64) wget https://github.com/gokcehan/lf/releases/download/r16/lf-linux-amd64.tar.gz;;

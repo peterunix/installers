@@ -1,7 +1,9 @@
 #!/bin/sh
 #Discord TUI client
 
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
+cd $dir
 wget https://gitlab.com/diamondburned/6cord/-/jobs/515405685/artifacts/raw/6cord_nk
 chmod +x 6cord_nk
-sudo ln -s /opt/6cord_nk /usr/local/bin/6cord
+sudo ln -s $dir6cord_nk /usr/local/bin/6cord

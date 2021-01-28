@@ -1,7 +1,8 @@
 #!/bin/sh
 
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 git clone https://github.com/andmarti1424/sc-im.git
-cd /opt/sc-im/src
+cd $dir/sc-im/src
 make -j$(nproc)
 sudo make install

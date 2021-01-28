@@ -1,6 +1,7 @@
 #!/bin/sh
 
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 git clone https://github.com/n-ivkovic/tspreed
 cd tspreed
 sudo make install

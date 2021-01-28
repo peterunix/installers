@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#cd /opt
+#cd $dir
 #git clone https://www.github.com/Airblader/i3 i3-gaps
 #cd i3-gaps
 #mkdir -p build && cd build
@@ -8,7 +8,8 @@
 #ninja
 #sudo meson install
 
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 git clone https://www.github.com/Airblader/i3 i3-gaps
 cd i3-gaps
 git checkout gaps && git pull

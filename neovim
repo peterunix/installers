@@ -1,7 +1,8 @@
 #!/bin/sh
 # Compile neovim from source
 
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 git clone https://github.com/neovim/neovim.git
 cd neovim
 make -j 1 CMAKE_INSTALL_PREFIX=/usr/local/bin/

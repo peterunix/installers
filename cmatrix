@@ -1,7 +1,8 @@
 #!/bin/sh
 # Cmatrix terminal bling
 
-cd /opt
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 git clone https://github.com/abishekvashok/cmatrix.git
 cd cmatrix
 autoreconf -i

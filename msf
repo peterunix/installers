@@ -1,7 +1,8 @@
 #!/bin/sh
 # Metasploit
 
-cd /opt	
+dir=$(mktemp -d $(basename $0).XXXXXX)
+cd $dir
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
 	chmod 755 msfinstall && \
 	./msfinstall
