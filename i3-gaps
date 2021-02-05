@@ -8,7 +8,7 @@
 #ninja
 #sudo meson install
 
-dir=$(mktemp -d $(basename $0).XXXXXX)
+dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 git clone https://www.github.com/Airblader/i3 i3-gaps
 cd i3-gaps

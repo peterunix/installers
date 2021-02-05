@@ -1,7 +1,7 @@
 #!/bin/sh
 # Install LF file manager binary
 
-dir=$(mktemp -d $(basename $0).XXXXXX)
+dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 
 case "$(arch)" in

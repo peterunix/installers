@@ -1,7 +1,7 @@
 #!/bin/sh
 # Nyancat rendered in terminal
 
-dir=$(mktemp -d $(basename $0).XXXXXX)
+dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 git clone https://github.com/klange/nyancat.git
 cd nyancat

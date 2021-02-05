@@ -1,6 +1,7 @@
 #!/bin/sh
 # Installs broot binary
 
+dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 wget https://dystroy.org/broot/download/x86_64-linux/broot
 chmod +x broot

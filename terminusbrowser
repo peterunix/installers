@@ -1,7 +1,7 @@
 #!/bin/sh
 # Doesn't install the required packages
 
-dir=$(mktemp -d $(basename $0).XXXXXX)
+dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 git clone https://github.com/wtheisen/TerminusBrowser.git
 cd $dir/TerminusBrowser

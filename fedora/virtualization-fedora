@@ -1,7 +1,0 @@
-#!/bin/sh
-# Install qemu with libvert in fedora
-
-sudo dnf install qemu
-sudo dnf install @virtualization
-systemctl start libvirtd
-systemctl enable libvirtd

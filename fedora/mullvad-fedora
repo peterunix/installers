@@ -1,6 +1,0 @@
-#!/bin/sh
-# Cmatrix terminal bling
-
-cd $dir
-wget https://mullvad.net/media/app/MullvadVPN-2020.5_x86_64.rpm
-sudo dnf install -y MullvadVPN-2020.5_x86_64.rpm

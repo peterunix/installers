@@ -1,8 +1,0 @@
-#!/bin/sh
-#httpd_flags
-#pkg_scripts=php_fpm
-
-pkg_add php php-fpm pear
-rcctl enable php72_fpm
-rcctl start php72_fpm
-ln -sf /etc/php-7.4.sample/opcache.ini /etc/php-7.4/

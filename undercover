@@ -1,7 +1,7 @@
 #!/bin/sh
 # Kali linux undercover mode all distros
 
-dir=$(mktemp -d $(basename $0).XXXXXX)
+dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 git clone https://github.com/SofianeHamlaoui/Go-undercover && cd Go-undercover
 chmod +x ./install.sh

@@ -1,6 +1,0 @@
-#!/bin/sh
-# Installs team viewer on ubuntu and debian
-sudo apt update ; \
-sudo apt install gdebi-core -y ; \
-wget https://download.teamviewer.com/download/linux/teamviewer_i386.deb ; \
-sudo gdebi teamviewer_i386.deb --n

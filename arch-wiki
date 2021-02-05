@@ -1,7 +1,7 @@
 #!/bin/sh
 # Local arch wikipedia
 
-dir=$(mktemp -d $(basename $0).XXXXXX)
+dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 mkdir arch-wiki-lite
 cd arch-wiki-lite

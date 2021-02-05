@@ -9,7 +9,7 @@
 #origin/ungoogled_debian_minimal
 #origin/unportable
 
-dir=$(mktemp -d $(basename $0).XXXXXX)
+dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 git clone --recurse-submodules https://github.com/ungoogled-software/ungoogled-chromium-debian.git
 cd ungoogled-chromium-debian
