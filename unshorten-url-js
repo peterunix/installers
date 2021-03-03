@@ -6,8 +6,10 @@ if [ -z "$(command -v npm)" ]; then
 	exit
 fi
 
-cd /opt
+dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
+cd $dir
 git clone https://github.com/amrwc/unshorten-url.git
 cd unshorten-url
 npm install
-sudo ln -s /opt/unshorten-url/unshorten-url.js /usr/local/bin/
+sudo mv unshorten-url.js /usr/local/bin/
+sudo chmod 555 /usr/local/bin/unshorten-url.js
