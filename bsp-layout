@@ -1,0 +1,4 @@
+#!/bin/sh
+
+curl https://raw.githubusercontent.com/phenax/bsp-layout/master/install.sh | bash -;
+sudo chmod 0775 /usr/local/lib/bsp-layout -R
