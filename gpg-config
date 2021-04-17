@@ -1,0 +1,9 @@
+#!/bin/sh
+# Hardened GPG config with yubikey+ssh support
+
+cd ~/.gnupg
+wget https://raw.githubusercontent.com/drduh/config/master/gpg-agent.conf
+echo "enable-ssh-support" >> ~/.gnupg/gpg-agent.conf
+gpgconf --kill gpg-agent
+gpg-connect-agent /bye
+

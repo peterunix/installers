@@ -1,0 +1,9 @@
+#!/bin/sh
+
+dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
+cd $dir
+git clone https://github.com/vifm/vifm.git --depth=1
+cd vifm
+autoreconf -f -i
+./configure
+sudo make install
