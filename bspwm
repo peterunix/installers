@@ -2,6 +2,6 @@
 
 dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
-apt install -y libxcb-icccm4-dev libxcb-ewmh-dev libxcb-keysyms1-dev
+sudo apt install -y libxcb-icccm4-dev libxcb-ewmh-dev libxcb-keysyms1-dev
 git clone https://github.com/baskerville/bspwm
 sudo make -j $(nproc) install
