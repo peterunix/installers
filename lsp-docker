@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd /opt/lsp-docker
+git clone https://github.com/emacs-lsp/lsp-docker
+cd lsp-docker
+docker pull emacslsp/lsp-docker-langservers
