@@ -1,0 +1,12 @@
+#!/bin/sh
+# Patched version of cp and mv that included "-g" for a progress bar
+
+dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
+cd $dir
+wget http://ftp.gnu.org/gnu/coreutils/coreutils-8.32.tar.xz
+tar xvJf coreutils-8.32.tar.xz
+cd coreutils-8.32/
+wget https://raw.githubusercontent.com/jarun/advcpmv/master/advcpmv-0.8-8.32.patch
+patch -p1 -i advcpmv-0.8-8.32.patch
+./configure
+sudo make install

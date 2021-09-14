@@ -5,4 +5,4 @@ dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 git clone https://github.com/SofianeHamlaoui/Go-undercover && cd Go-undercover
 chmod +x ./install.sh
-./install.sh
+sudo ./install.sh
