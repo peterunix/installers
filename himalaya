@@ -1,0 +1,28 @@
+#!/bin/sh
+# Email client
+# As root:
+curl -sSL https://raw.githubusercontent.com/soywod/himalaya/master/install.sh | sudo sh
+# As a regular user:
+curl -sSL https://raw.githubusercontent.com/soywod/himalaya/master/install.sh | PREFIX=~/.local sh
+
+# ~/.config/himalaya/config.toml
+#name = "Your full name"
+#downloads-dir = "/abs/path/to/downloads"
+#signature = """
+#--
+#Regards,
+#"""
+#
+#[gmail]
+#default = true
+#email = "your.email@gmail.com"
+#
+#imap-host = "imap.gmail.com"
+#imap-port = 993
+#imap-login = "your.email@gmail.com"
+#imap-passwd-cmd = "pass show gmail"
+#
+#smtp-host = "smtp.gmail.com"
+#smtp-port = 465
+#smtp-login = "your.email@gmail.com"
+#smtp-passwd-cmd = "security find-internet-password -gs gmail -w"

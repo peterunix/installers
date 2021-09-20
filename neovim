@@ -3,7 +3,7 @@
 
 dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
-git clone https://github.com/neovim/neovim.git
+git clone --depth=1 https://github.com/neovim/neovim.git
 cd neovim
 make -j 1 CMAKE_INSTALL_PREFIX=/usr/local/bin/
 sudo make install
