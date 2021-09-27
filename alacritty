@@ -1,6 +1,6 @@
 #!/bin/sh
 
 cd $dir
-git clone https://github.com/alacritty/alacritty.git
+git clone https://github.com/alacritty/alacritty.git --depth=1
 cd alacritty
-sudo make install
+sudo make -j $(nproc) install
