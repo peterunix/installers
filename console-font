@@ -1,0 +1,2 @@
+sed -i 's/^FONTFACE=.*/FONTFACE="TerminessTTF Nerd Font Mono"/g'
+sed -i 's/^FONTSIZE=.*/FONTSIZE="24x12/g"
