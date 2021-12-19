@@ -1,9 +1,0 @@
-#!/bin/sh
-
-if [ ! -z $(command -v youtube-dl) ]; then
-	sudo apt remove youtube-dl -y
-	sudo rm /usr/local/bin/youtube-dl
-fi
-
-sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
-sudo chmod a+rx /usr/local/bin/youtube-dl

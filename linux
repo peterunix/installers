@@ -1,3 +1,0 @@
-#!/bin/sh
-cd $dir
-git clone https://github.com/torvalds/linux.git

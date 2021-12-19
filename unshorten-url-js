@@ -11,5 +11,5 @@ cd $dir
 git clone https://github.com/amrwc/unshorten-url.git
 cd unshorten-url
 npm install
-sudo mv unshorten-url.js /usr/local/bin/
-sudo chmod 555 /usr/local/bin/unshorten-url.js
+doas mv unshorten-url.js /usr/local/bin/
+doas chmod 555 /usr/local/bin/unshorten-url.js

@@ -4,4 +4,4 @@ dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 git clone https://github.com/drscream/lemonbar-xft.git
 cd lemonbar-xft
-sudo make install
+doas make install

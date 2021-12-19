@@ -5,4 +5,4 @@ git clone https://github.com/KoffeinFlummi/htop-vim --depth=1
 cd htop-vim
 ./autogen.sh
 ./configure
-sudo make -j $(nproc) install 
+doas make -j $(nproc) install 

@@ -6,4 +6,4 @@ cd $dir
 git clone --depth=1 https://github.com/neovim/neovim.git
 cd neovim
 make -j 1 CMAKE_INSTALL_PREFIX=/usr/local/bin/
-sudo make install
+doas make install

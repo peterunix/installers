@@ -4,4 +4,4 @@ dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 git clone git://github.com/rkitover/vimpager
 cd vimpager
-sudo make install
+doas make install

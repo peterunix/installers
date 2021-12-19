@@ -4,7 +4,7 @@ dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 git clone https://github.com/dracula/grub.git --depth=1
 cd grub
-sudo mkdir -p /usr/share/gruv/themes
-sudo mv dracula /usr/share/gruv/themes 
-sudo sed 's/^GRUB_THEME.*$/GRUB_THEME=\"\/usr\/share\/grub\/themes\/dracula\/theme\.txt\"/g' -i /etc/default/grub
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+doas mkdir -p /usr/share/gruv/themes
+doas mv dracula /usr/share/gruv/themes 
+doas sed 's/^GRUB_THEME.*$/GRUB_THEME=\"\/usr\/share\/grub\/themes\/dracula\/theme\.txt\"/g' -i /etc/default/grub
+doas grub-mkconfig -o /boot/grub/grub.cfg

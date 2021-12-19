@@ -1,7 +1,0 @@
-#!/bin/sh
-
-dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
-cd $dir
-git clone --depth=1 https://github.com/LukeSmithxyz/kjv.git
-cd kjv
-sudo make install

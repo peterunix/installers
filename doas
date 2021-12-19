@@ -2,8 +2,8 @@
 
 dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
-sudo apt install -y build-essential make bison flex libpam0g-dev 
+doas apt install -y build-essential make bison flex libpam0g-dev 
 git clone https://github.com/Duncaen/OpenDoas.git
 cd OpenDoas
 ./configure
-sudo make install
+doas make install

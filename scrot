@@ -6,4 +6,4 @@ git clone https://github.com/resurrecting-open-source-projects/scrot.git
 cd $dir/scrot
 ./autogen.sh
 ./configure
-sudo make clean install
+doas make clean install

@@ -10,4 +10,4 @@ case "$(arch)" in
 	arm64) wget https://github.com/gokcehan/lf/releases/download/r16/lf-linux-arm64.tar.gz;;
 esac
 
-sudo tar -xzvf lf-linux-*.tar.gz -C /usr/local/bin/
+doas tar -xzvf lf-linux-*.tar.gz -C /usr/local/bin/

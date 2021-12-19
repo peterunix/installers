@@ -1,5 +1,0 @@
-#!/bin/sh
-
-dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
-cd $dir
-git clone https://github.com/yacy/yacy_search_server.git

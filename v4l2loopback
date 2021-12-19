@@ -2,14 +2,14 @@
 # It's some kernel module to get virtual a webcam going
 
 # Installing linux kernel headers for current running kernel
-sudo apt install -y linux-headers-$(uname -r)
+doas apt install -y linux-headers-$(uname -r)
 
 dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 git clone https://github.com/umlaeute/v4l2loopback.git
 cd v4l2loopback
-sudo make 
-sudo make install
-sudo cp v4l2loopback.ko /lib/modules/$(uname -r)
-sudo depmod -a
-sudo modprobe v4l2loopback
+doas make 
+doas make install
+doas cp v4l2loopback.ko /lib/modules/$(uname -r)
+doas depmod -a
+doas modprobe v4l2loopback

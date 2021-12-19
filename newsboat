@@ -1,8 +1,0 @@
-#!/bin/sh
-# Compiles newsboat RSS/Atom feed reader
-
-dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
-cd $dir
-git clone https://github.com/newsboat/newsboat.git
-cd newsboat
-sudo make -j $(nproc) clean install

@@ -3,5 +3,5 @@
 dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
 git clone https://github.com/adi1090x/slim_themes.git --depth=1
-sudo cp -r slim_themes/themes/* /usr/share/slim/themes/
-sudo sed -i 's/^current_theme.*/current_theme desky/g' /etc/slim.conf
+doas cp -r slim_themes/themes/* /usr/share/slim/themes/
+doas sed -i 's/^current_theme.*/current_theme desky/g' /etc/slim.conf

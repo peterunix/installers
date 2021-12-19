@@ -6,5 +6,5 @@ git clone https://github.com/adi1090x/polybar-themes
 cd polybar-themes/polybar-1
 cp -r fonts/* ~/.local/share/fonts
 fc-cache -v
-sudo rm /etc/fonts/conf.d/70-no-bitmaps.conf
+doas rm /etc/fonts/conf.d/70-no-bitmaps.conf
 #cp -r * ~/.config/polybar

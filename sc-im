@@ -5,4 +5,4 @@ cd $dir
 git clone https://github.com/andmarti1424/sc-im.git
 cd $dir/sc-im/src
 make -j$(nproc)
-sudo make install
+doas make install

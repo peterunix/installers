@@ -2,6 +2,7 @@
 
 dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
 cd $dir
+doas apt install libxfixes-dev libxi-dev
 git clone https://github.com/jcs/xbanish.git
 cd $dir/xbanish
-sudo make install
+doas make install

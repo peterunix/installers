@@ -8,7 +8,7 @@ git clone https://git.suckless.org/farbfeld
 cd farbfeld
 make clean
 make
-sudo make install
+doas make install
 
 # Xlib Xft farbfeld
 dir=$(mktemp -d /tmp/$(basename $0).XXXXXX)
@@ -16,4 +16,4 @@ cd $dir
 git clone https://git.suckless.org/sent
 cd sent
 make
-sudo make install
+doas make install

@@ -6,4 +6,4 @@ git clone https://github.com/sherlock-project/sherlock.git
 cd sherlock
 chmod +x sherlock/sherlock.py
 python3 -m pip install -r requirements.txt --user
-sudo ln -s $dirsherlock/sherlock/sherlock.py /usr/local/bin
+doas ln -s $dirsherlock/sherlock/sherlock.py /usr/local/bin
