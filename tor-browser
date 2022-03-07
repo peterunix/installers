@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cd /opt	
-case $(arch) in
+case $(uname -m) in
 	i386|i486|i586|i686)
 		wget $(lynx -dump -hiddenlinks=listonly https://www.torproject.org/download/languages/ | grep linux32-.*en-US.tar.xz$ | cut -d' '  -f4)
 		tar -xJvf tor-browser*en-US.tar.xz
